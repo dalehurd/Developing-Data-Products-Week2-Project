@@ -1,13 +1,39 @@
-Version: 1.0
+---
+  title: "p2"
+author: "D Hurd"
+date: "2022-09-19"
+output: html_document
+---
+  
+  ```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+The source code is available at [GitHub](https://github.com/Krysek/Coursera-Data-Science-Specialization-Developing-Data-Products-Week-2-Assignment). [Just click here!](https://github.com/Krysek/Coursera-Data-Science-Specialization-Developing-Data-Products-Week-2-Assignment)
 
-RestoreWorkspace: Default
-SaveWorkspace: Default
-AlwaysSaveHistory: Default
+## My First Leaflet Map
+Create a leaflet map object.
+```{r}
+library(leaflet)
+Golf_near_me <- leaflet() %>% addTiles()
+```
 
-EnableCodeIndexing: Yes
-UseSpacesForTab: Yes
-NumSpacesForTab: 2
-Encoding: UTF-8
 
-RnwWeave: Sweave
-LaTeX: pdfLaTeX
+```
+
+Add the marker to the map and display the map.
+```{r}
+
+Golf_near_me <- leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lat=43.071150, lng=-73.765330, popup="Saratoga National") %>%
+  addMarkers(lat=43.195450,lng=-73.688780, popup="Airway Meadows") %>%
+  addMarkers(lat=43.051510,lng=-73.805870, popup="Saratoga Spa State Park") %>%
+  addMarkers(lat=42.90349094021997, lng=-73.71121019768609, popup="Fairways of Halfmoon") %>%
+  addMarkers(lat=43.00087206212024, lng=-73.87088894464911, popup="Ballson Spa CC") %>%
+  addMarkers(lat=42.90352705701682, lng=-73.82756040232265, popup="Van Patten Golf Club") %>%
+  addMarkers(lat=42.847295032445196, lng=-73.8761566734891, popup="Mohawk River CC") %>%
+  addMarkers(lat=42.89206456733439, lng=-73.85318437348771, popup="Eagle Crest") %>%
+  addMarkers(lat=42.7448850745582, lng=-73.67093854650402, popup="Frear Park") #%>%
+Golf_near_me
+
+```
