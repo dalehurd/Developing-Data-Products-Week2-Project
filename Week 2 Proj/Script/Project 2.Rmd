@@ -5,11 +5,13 @@ date: "2022-09-19"
 output: html_document
 ---
 
-```
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-The source code is available at [GitHub](https://github.com/dalehurd/Developing-Data-Products-Week2-Project). 
+The source code is available at 
+[https://github.com/dalehurd/Developing-Data-Products-Week2-Project]
+
 
 
 ## My First Leaflet Map
@@ -39,6 +41,8 @@ Golf_near_me <- leaflet() %>%
 Golf_near_me
 
 ```
- [Just click here for source code!](https://github.com/dalehurd/Developing-Data-Products-Week2-Project)
+
+[Just click here for source code!](https://github.com/dalehurd/Developing-Data-Products-Week2-Project)
+ 
 
 
