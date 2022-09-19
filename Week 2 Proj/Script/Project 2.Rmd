@@ -9,7 +9,7 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-The source code is available at [GitHub](https://github.com/dalehurd/Developing-Data-Products-Week2-Project/blob/main/Developing-Data-Products-Week2-Project.Rproj). 
+The source code is available at [GitHub](https://github.com/dalehurd/Developing-Data-Products-Week2-Project). 
 
 
 ## My First Leaflet Map
